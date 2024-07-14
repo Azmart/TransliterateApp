@@ -15,6 +15,14 @@ st.set_page_config(page_title="Nepali Transliteration App", page_icon=":speech_b
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
+hide_menu = """
+<style>
+#MainMenu {
+    visibility:hidden;
+}
+</style>
+"""
+
 st.sidebar.title("ट्रान्सफार्मर स्थापत्यमा आधारित न्यून स्रोतिय भाषामा अव्याख्याणिक मोडेल: रोमनाइज्ड नेपालीबाट शुद्ध नेपालीमा।")
 st.sidebar.title("Lipi 1.1: Transformer Based Architecture For Language Transliteration In Low Resource Languages: From Romanised Nepali to Pure Nepali")
 st.sidebar.title("基于变压器的架构 对于语言音译 在资源匮乏的语言中：从罗马化尼泊尔语到纯尼泊尔语")
@@ -26,7 +34,8 @@ if st.sidebar.button("Exit Chat"):
     
 st.title(" Nepali to English Transliteration App")
 st.subheader("रोमन मा लेखिएको नेपाली लाई शुद्ध नेपाली भाषा मा उच्च सटिकता का साथ अव्याख्यान गर्दछ। Transliterates romanised Nepali to pure Nepali script with precision. 将罗马化的尼泊尔语准确地音译为纯尼泊尔文字。")
-    
+st.markdown(hide_menu, unsafe_allow_html=True)
+
 with st.columns(3)[1]:
     st.subheader("Namaskar🙏")
 
