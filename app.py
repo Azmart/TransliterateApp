@@ -25,7 +25,7 @@ hide_menu = """
 
 st.sidebar.title("ट्रान्सफार्मर स्थापत्यमा आधारित न्यून स्रोतिय भाषामा अव्याख्याणिक मोडेल: रोमनाइज्ड नेपालीबाट शुद्ध नेपालीमा।")
 st.sidebar.title("Lipi 1.1: Transformer Based Architecture For Language Transliteration In Low Resource Languages: From Romanised Nepali to Pure Nepali")
-st.sidebar.title("基于变压器的架构 对于语言音译 在资源匮乏的语言中：从罗马化尼泊尔语到纯尼泊尔语")
+st.sidebar.title("用于低资源语言的音译转换架构：从英文字母化尼泊尔语到纯尼泊尔语")
 
 if st.sidebar.button("Exit Chat"):
     st.session_state.messages = []  # Clear the chat history
