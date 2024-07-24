@@ -32,7 +32,7 @@ if st.sidebar.button("Exit Chat"):
     st.session_state.start_chat = False  # Reset the chat state
     st.session_state.thread_id = None
     
-st.title(" Nepali to English Transliteration App")
+st.title(" English to Nepali Transliteration App")
 st.subheader("रोमन मा लेखिएको नेपाली लाई शुद्ध नेपाली भाषा मा उच्च सटिकता का साथ अव्याख्यान गर्दछ। Transliterates romanised Nepali to pure Nepali script with precision. 将罗马化的尼泊尔语准确地音译为纯尼泊尔文字。")
 st.markdown(hide_menu, unsafe_allow_html=True)
 
