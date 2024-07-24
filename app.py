@@ -37,7 +37,7 @@ st.subheader("रोमन मा लेखिएको नेपाली ल�
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 with st.columns(3)[1]:
-    st.subheader("Namaskar🙏")
+    st.subheader("Namaste🙏")
 
 if st.button("Start Chat"):
     st.session_state.start_chat = True
